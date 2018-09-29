@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01宏函数", "01宏函数.C\01宏函数.C.vcxproj", "{21661DCA-6A37-4A75-A7CF-010FB4168DD1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01宏函数", "01宏函数\01宏函数.C.vcxproj", "{21661DCA-6A37-4A75-A7CF-010FB4168DD1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02变量的传递", "02变量的传递\02变量的传递.vcxproj", "{D304529D-C88F-419C-9031-1251ED1AAE52}"
 EndProject
