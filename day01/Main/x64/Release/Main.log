@@ -1,0 +1,3 @@
+﻿  Main.cpp
+f:\source\repos\main\main\main.cpp(122): error C2440: “=”: 无法从“void *”转换为“char *”
+  f:\source\repos\main\main\main.cpp(122): note: 从“void*”到指向非“void”的指针的强制转换要求显式类型强制转换
