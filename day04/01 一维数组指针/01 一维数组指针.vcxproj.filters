@@ -20,10 +20,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01 一维数组指针.c">
+    <ClCompile Include="pch.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pch.c">
+    <ClCompile Include="01 一维数组名称.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
