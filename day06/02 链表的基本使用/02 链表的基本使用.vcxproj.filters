@@ -18,24 +18,18 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="code.h">
+    <ClInclude Include="linkList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="06 配置文件读写.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="pch.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="config.c">
+    <ClCompile Include="02 链表的基本使用.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="code.c">
+    <ClCompile Include="linkList.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

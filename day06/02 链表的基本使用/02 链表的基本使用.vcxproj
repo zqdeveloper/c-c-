@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{CF0A600A-FBB8-415F-AB22-2B5E96879B88}</ProjectGuid>
+    <ProjectGuid>{51B38602-7F0E-4785-AF7F-881FCAFB13AF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My06配置文件读写</RootNamespace>
+    <RootNamespace>My02链表的基本使用</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,14 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="code.h" />
-    <ClInclude Include="config.h" />
+    <ClInclude Include="linkList.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="06 配置文件读写.c" />
-    <ClCompile Include="code.c" />
-    <ClCompile Include="config.c" />
+    <ClCompile Include="02 链表的基本使用.c" />
+    <ClCompile Include="linkList.c" />
     <ClCompile Include="pch.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
