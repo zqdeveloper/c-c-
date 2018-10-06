@@ -11,7 +11,21 @@ struct LinkNode
 	int num;
 	struct LinkNode *next;
 };
+
 //初始化链表
 struct LinkNode * init_linkList();
+
 //遍历链表
 void foreach_linkList(struct LinkNode *pHeader);
+
+//插入链表
+void insert_linkList(struct LinkNode *pHeader,int oldVal,int newVal);
+
+//删除链表
+void delete_linkList(struct LinkNode *pHeader,int val);
+
+//清空链表
+void clear_linkList(struct LinkNode *pHeader);
+
+//销毁
+void destroty_linkList(struct LinkNode *pHeader);

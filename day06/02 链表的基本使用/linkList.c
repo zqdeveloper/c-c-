@@ -37,7 +37,7 @@ struct LinkNode * init_linkList()
 		pTail->next = newNode;
 		//更新下新的尾节点
 		pTail = newNode;
-		
+
 
 
 	}
@@ -59,5 +59,100 @@ void foreach_linkList(struct LinkNode *pHeader)
 		printf("%d\n", pCurrent->num);
 		pCurrent = pCurrent->next;
 	}
+}
+
+
+//插入链表
+void insert_linkList(struct LinkNode *pHeader, int oldVal, int newVal)
+{
+	if (!pHeader)
+	{
+		return;
+	}
+	//创建两个辅助指针变量
+	struct LinkNode * pPrev = pHeader;
+	struct LinkNode *pCurrent = pHeader->next;
+	while (pCurrent)
+	{
+		if (pCurrent->num == oldVal)//找到插入位置
+		{
+			break;
+		}
+		//没有找到位置，让辅助指针后移
+		pPrev = pCurrent;
+		pCurrent = pCurrent->next;
+	}
+
+	//创建新节点
+	struct LinkNode * newNode = malloc(sizeof(struct LinkNode));
+	newNode->num = newVal;
+	newNode->next = NULL;
+
+	//建立关系,更新指针的指向
+	newNode->next = pCurrent;
+	pPrev->next = newNode;
+}
+
+//删除链表
+void delete_linkList(struct LinkNode *pHeader, int val)
+{
+	if (!pHeader)
+	{
+		return;
+	}
+	struct LinkNode *pPrev = pHeader;
+	struct LinkNode * pCurrent = pHeader->next;
+	while (pCurrent)
+	{
+		if (pCurrent->num == val)
+		{
+			break;
+		}
+		pPrev = pCurrent;
+		pCurrent = pCurrent->next;
+	}
+	if (!pCurrent)
+	{
+		return;
+	}
+	pPrev->next = pCurrent->next;
+	free(pCurrent);
+	pCurrent = NULL;
+}
+
+//清空链表
+void clear_linkList(struct LinkNode *pHeader)
+{
+	if (!pHeader)
+	{
+		return;
+	}
+	//创建临时指针变量
+	struct LinkNode * pCurrent = pHeader->next;
+	while (pCurrent)
+	{
+		//先保存住待删除节点后面的节点
+		struct LinkNode *nextNode = pCurrent->next;
+		free(pCurrent);
+		pCurrent = NULL;
+		pCurrent = nextNode;
+	}
+	//头节点的next置空
+	pHeader->next = NULL;
+
+}
+
+//销毁
+void destroty_linkList(struct LinkNode *pHeader)
+{
+	if (!pHeader)
+	{
+		return;
+	}
+	//先清空链表
+	clear_linkList(pHeader);
+	//再释放头节点
+	free(pHeader);
+	pHeader = NULL;
 }
 
