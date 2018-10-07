@@ -35,3 +35,9 @@ void reverse_linkList(struct LinkNode *pHeder);
 
 //返回链表的长度
 int size_linkList(struct LinkNode*pHeader);
+
+//利用递归 逆序遍历
+void printLinkList(struct LinkNode*pHeader);
+
+//利用递归 逆序遍历
+void printLinkList(struct LinkNode*pHeader);

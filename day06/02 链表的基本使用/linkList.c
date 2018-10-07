@@ -192,3 +192,15 @@ int size_linkList(struct LinkNode*pHeader)
 	}
 	return number;
 }
+
+//ÀûÓÃµİ¹é ÄæĞò±éÀú
+void printLinkList(struct LinkNode*pHeader)
+{
+	if (!pHeader)
+	{
+		return;
+	}
+	printLinkList(pHeader->next);
+	printf("%d\n", pHeader->num);
+}
+
