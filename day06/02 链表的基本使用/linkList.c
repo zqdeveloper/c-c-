@@ -156,3 +156,39 @@ void destroty_linkList(struct LinkNode *pHeader)
 	pHeader = NULL;
 }
 
+//反转链表
+void reverse_linkList(struct LinkNode *pHeder)
+{
+	if (!pHeder)
+	{
+		return;
+	}
+	struct LinkNode * pPrev = NULL;
+	struct LinkNode *pCurrent = pHeder->next;
+	struct LinkNode *pNext = NULL;
+	while (pCurrent)
+	{
+		pNext = pCurrent->next;
+		pCurrent->next = pPrev;
+		pPrev = pCurrent;	
+		pCurrent = pNext;
+	}
+	pHeder->next = pPrev;
+}
+
+//返回链表的长度
+int size_linkList(struct LinkNode*pHeader)
+{
+	if (!pHeader)
+	{
+		return -1;
+	}
+	struct LinkNode * pCurrent = pHeader->next;
+	int number = 0;
+	while (pCurrent)
+	{
+		number++;
+		pCurrent = pCurrent->next;
+	}
+	return number;
+}

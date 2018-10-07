@@ -29,3 +29,9 @@ void clear_linkList(struct LinkNode *pHeader);
 
 //销毁
 void destroty_linkList(struct LinkNode *pHeader);
+
+//反转链表
+void reverse_linkList(struct LinkNode *pHeder);
+
+//返回链表的长度
+int size_linkList(struct LinkNode*pHeader);
